@@ -1,50 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fútbol 1</title>
     <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    nav {
-      background-color: #007BFF;
-      padding: 1em;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1em;
-      margin: 0;
-      padding: 0;
-    }
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-    }
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
-    .content {
-      padding: 2em;
-    }
-  </style>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f9f9f9;
+        color: #333;
+      }
+
+      nav {
+        background-color: #007bff;
+        padding: 1em;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1em;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3em 1em;
+        text-align: center;
+      }
+
+      .content img {
+        max-width: 250px;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        margin-bottom: 1.5em;
+      }
+
+      .description {
+        max-width: 700px;
+        padding: 0 1em;
+      }
+
+      .description h1 {
+        color: #007bff;
+        margin-bottom: 0.5em;
+      }
+
+      .description p {
+        line-height: 1.7;
+        margin-bottom: 1em;
+      }
+
+      section {
+        max-width: 800px;
+        margin: 2em auto;
+        padding: 2em;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      section h2 {
+        color: #007bff;
+        margin-bottom: 1em;
+        text-align: center;
+      }
+
+      .stats ul,
+      .achievements ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+
+      .stats li,
+      .achievements li {
+        margin: 0.7em 0;
+        font-size: 1.1em;
+      }
+    </style>
+  </head>
+  <body>
     <nav>
-    <ul>
-      <li><a href="futbol.htm">Fútbol</a></li>
-      <li><a href="baloncesto.htm">Baloncesto</a></li>
-      <li><a href="tenis.htm">Tenis</a></li>
-      <li><a href="beisbol.htm">Béisbol</a></li>
-      <li><a href="atletismo.htm">Atletismo</a></li>
-      <li><a href="natacion.htm">Natación</a></li>
-      <li><a href="ciclismo.htm">Ciclismo</a></li>
-    </ul>
-  </nav>
-</body>
+      <ul>
+        <li><a href="futbol.htm">Fútbol</a></li>
+        <li><a href="baloncesto.htm">Baloncesto</a></li>
+        <li><a href="tenis.htm">Tenis</a></li>
+        <li><a href="beisbol.htm">Béisbol</a></li>
+        <li><a href="atletismo.htm">Atletismo</a></li>
+        <li><a href="natacion.htm">Natación</a></li>
+        <li><a href="ciclismo.htm">Ciclismo</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <div class="description">
+        <h1>Angel Noe Pacheco Ramos</h1>
+        <p>
+          Soy un apasionado del fútbol desde los 5 años. He jugado como
+          delantero en múltiples equipos juveniles y actualmente formo parte del
+          Club Deportivo Estrellas. Mi estilo de juego se caracteriza por la
+          velocidad, precisión en el pase y una gran visión táctica en el campo.
+        </p>
+        <p>
+          Mi sueño es llegar a jugar en una liga internacional y representar a
+          mi país en competencias mundiales. Trabajo todos los días para mejorar
+          y dar lo mejor de mí en cada entrenamiento y partido.
+        </p>
+      </div>
+    </div>
+
+    <section class="stats">
+      <h2>Estadísticas</h2>
+      <ul>
+        <li><strong>Partidos jugados:</strong> 124</li>
+        <li><strong>Goles:</strong> 58</li>
+        <li><strong>Asistencias:</strong> 34</li>
+        <li><strong>Tarjetas:</strong> 5 amarillas, 0 rojas</li>
+      </ul>
+    </section>
+
+    <section class="achievements">
+      <h2>Logros</h2>
+      <ul>
+        <li>🏆 Mejor goleador Sub-17 - 2021</li>
+        <li>🏅 Jugador del mes - Enero 2023</li>
+        <li>🥇 Campeón Torneo Regional - 2022</li>
+      </ul>
+    </section>
+  </body>
 </html>
